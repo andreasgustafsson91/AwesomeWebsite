@@ -1,0 +1,9 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.GossipArticles>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="py-3">@Model.Value("gossipArticleTitle")</div>
+<div>@Model.Value("gossipArticleContent")</div>

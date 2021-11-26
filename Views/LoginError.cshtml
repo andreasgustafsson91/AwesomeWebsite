@@ -1,0 +1,10 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.LoginError>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<h3>Restricted Access.</h3>
+<h4>Log in with Premium Account to continute to this article</h4>
+@Html.Partial("LoginStatusPartial")
